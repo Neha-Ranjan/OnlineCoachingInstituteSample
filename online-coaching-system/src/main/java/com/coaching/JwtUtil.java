@@ -37,4 +37,15 @@ public class JwtUtil {
                 .getBody()
                 .getSubject();
     }
+    
+    public String extractRole(String token) {
+
+        Claims claims = Jwts.parserBuilder()
+                .setSigningKey(getKey())
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
+
+        return claims.get("role", String.class);
+    }
 }
