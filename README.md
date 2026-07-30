@@ -1,2 +1,2 @@
-# OnlineCoachingInstituteSample
-OnlineCoachingInstituteSample with branch
+# OnlineCoachingInstituteApp
+OnlineCoachingInstituteApp with branch
